@@ -1,0 +1,213 @@
+.calc__block {
+  margin-bottom: 32px;
+}
+.calc__block-title {
+  font-family: "Nekst-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 90%;
+  color: #111111;
+}
+.calc__block-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.css-1jh9pu9-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled):before {
+  border-bottom: none;
+}
+.block__inner {
+  max-width: 427px;
+}
+.block__inner-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #575757;
+}
+.block__inner-inp {
+  font-family: "Nekst-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #575757;
+}
+.block__inner-wrapper {
+  position: relative;
+}
+.block__inner-cost {
+  position: absolute;
+  top: 0px;
+  left: 24px;
+  font-family: "Nekst-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 10px;
+  color: #575757;
+}
+.block__inner-desc {
+  position: absolute;
+  top: 0;
+  right: 24px;
+  font-family: "Nekst-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 0px;
+  color: #575757;
+}
+.calc__block__bottom {
+  width: 100%;
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+.calc-bottom-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0%;
+  color: #575757;
+}
+.calc-bottom-price {
+  font-family: "Nekst-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  margin-top: -10px;
+  color: #333333;
+  margin-bottom: 0;
+  line-height: 90%;
+}
+.calc__bottom-button {
+  margin-top: 15px;
+  font-family: "Nekst-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 36px;
+  color: #ffffff;
+  padding: 14px 102px;
+  max-width: 426px;
+  max-height: 68px;
+  outline: none;
+  background: #ff9514;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.calc__bottom-button:hover {
+  background: #111111;
+  border-radius: 40px;
+  color: #ffffff;
+  transition: all 0.7s ease-in-out;
+}
+.calc__bottom-button:active {
+  background: #575757;
+  border-radius: 40px;
+  color: #ffffff;
+  transition: all 0.7s ease-in-out;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes spinner-border {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.submit-spinner_hide {
+  display: none;
+}
+.submit-spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: -0.125em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 0.75s linear infinite spinner-border;
+  animation: 0.75s linear infinite spinner-border;
+}
+@media (max-width: 1024px) {
+  .calc__block-wrapper {
+    flex-direction: column;
+  }
+  .css-wrcp5r {
+    width: 100%;
+  }
+  .calc__bottom-inner {
+    margin-right: 150px;
+  }
+  .calc__block-wrapper {
+    padding-right: 0;
+  }
+  .calc__block__bottom {
+    flex-wrap: wrap;
+  }
+  .block__inner {
+    max-width: 100%;
+  }
+  .calc__bottom-button {
+    margin-top: 44px;
+  }
+  .calc__bottom-button {
+    padding: 18px 22px;
+    padding: 18px 51px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .calc__block-title {
+    font-weight: 900;
+    font-size: 34px;
+  }
+  .block__inner-title {
+    font-size: 14px;
+  }
+  .block__inner-desc {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .calc__bottom-inner {
+    margin-right: 0;
+  }
+  .block__inner-cost {
+    font-size: 22px;
+  }
+  .calc-bottom-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 136%;
+  }
+  .calc-bottom-price {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .calc__bottom-button {
+    padding: 18px 51px;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 20px;
+  }
+}
+/* const theme = createTheme({
+  breakpoints: {
+    values: {
+      sm: 320, // phone
+      md: 480, // small laptop
+      lg: 780, // big laptop
+      xl: 1024, // desktop
+    },
+  },
+}); */
